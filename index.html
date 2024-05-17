@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/script.js" type="module" defer></script>
+    <script src="./js/scroll-header.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <a href=""><img src="" alt=""></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Anuncios</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <h1>Formulario Venta/Alquiler</h1>
+    </section>
+    <section class="form">
+        <div class="form-box">
+            <form action="" method="post" id="form-item">
+                <h2>Registro</h2>
+            
+                <div class="input-box">
+                    <input type="text" required name="nombre" id="txtnombre">
+                    <label for="txtnombre">Titulo</label>
+                </div>
+                
+                <div class="check-transaccion">
+                    <fieldset>
+                        <legend>
+                            <label for="txttransaccion">Transaccion</label>
+                        </legend>
+                        <div class="transaccion">   
+                            <label for="alquiler">Alquiler</label>
+                            <input type="radio" name="transaccion" id="alquila">
+                            <label for="venta">Venta</label>
+                            <input type="radio" name="transaccion" id="vende">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="input-text">
+                    <label for="">Aclaraciones:</label>
+                    <textarea name="texto" placeholder="Aclaracion..." id="aclaracion"></textarea>
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" required name="puertas" id="txtpuertas">
+                    <label for="txtpuertas">Puertas</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" required name="km" id="txtkms">
+                    <label for="txtkm">KMs</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" required name="potencia" id="txtpotencia">
+                    <label for="txtpotencia">Potencia</label>
+                </div>
+        
+                <button class="btn-send" aria-required="true" type="submit">Guardar</button>
+            </form>
+        </div>
+    </section>
+    <div class="container-btn-delete-all">
+        <button type="button" id="btn-delete-all" class="btn">Borrar Todo</button>
+    </div>
+    <section class="tabla">
+        <div class="container-table">
+            <table id="table" class="table-items">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Titulo</th>
+                        <th>Venta</th>
+                        <th>Alquiler</th>
+                        <th>Aclaracion</th>
+                        <th>Puertas</th>
+                        <th>KMs</th>
+                        <th>Potencia</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody class="tbodyx"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <div id="spinner" class="spinner">
+        <img src="./recursos/logo.svg" alt="Spinner" class="spinner-img">
+    </div>
+
+    <footer>
+        <div class="barra">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Anuncios</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>Casasola Joaquin <date>2024 </date>&copy;</p>
+    </footer>
+</body>
+
+</html>

@@ -155,6 +155,7 @@ function escuchandoBtnDeleteAll() {
         const rta = confirm('Desea eliminar todos los Items?');
 
         if(rta) {
+            mostrarSpinner();
             items.splice(0, items.length);
       
             try {
@@ -162,8 +163,10 @@ function escuchandoBtnDeleteAll() {
               rellenarTabla();
             }
             catch (error) {
-              alert(error);
+                ocultarSpinner(); 
+                alert(error);
             }
+            ocultarSpinner(); 
         }
     });
 }
